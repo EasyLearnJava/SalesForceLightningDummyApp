@@ -1,4 +1,6 @@
-## SalesForceLightningDummyApp
+### SalesForceLightningDummyApp
+
+# 1-Create-App-And-HeaderComponent
 
 * <b>DummyApp.app</b> extends the styling from SLDS "SalesForce Lightning Design System" and it has a reference to the DummyHeader Component
 
