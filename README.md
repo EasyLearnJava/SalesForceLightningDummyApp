@@ -16,6 +16,8 @@ Read more about
 
 <a href="https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/controllers_server_actions_states.htm" target="_blank">Hello, world!</a>
 
+<a href="https://www.w3schools.com" target="_blank">Visit W3Schools.com!</a> 
+
 Read more about
 [Better Exception Handling](https://developer.salesforce.com/blogs/2017/09/error-handling-best-practices-lightning-apex.html)
 
