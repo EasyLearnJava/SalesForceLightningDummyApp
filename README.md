@@ -11,13 +11,14 @@
 * <b>DummyApp.app</b> has a new entry for DummyContacts component
 * <b>DummyContacts.cmp</b> has a init handler which is invoked when the component is loaded. This calls the findAllContacts method on the DummyController apex class using the functions defined in the <b>DummyContactsController.js</b> and <b>DummyContactsHelper.js</b>
 
-The <b>DummyContactsHelper.js</b> helper upon calling a server side Apex class can have different types of Action states it can handle
+NOTE: The <b>DummyContactsHelper.js</b> helper upon calling a server side Apex class can have different types of Action states it can handle
 - NEW
 - RUNNING
 - SUCCESS
 - ERROR
 - INCOMPLETE
 - ABORTED
+
 https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/controllers_server_actions_states.htm
 
 -----------------------------------------------------------------------------------------------------------------------------
