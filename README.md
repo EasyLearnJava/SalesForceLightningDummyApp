@@ -6,3 +6,7 @@
 
 * <b>DummyHeader.cmp</b> uses the lighting layout and lightning icon tags to display a Header for our application
 
+```
+```
+
+### 2-Fetch-Contact-Records-Print-In-Console
