@@ -12,7 +12,7 @@
 * <b>DummyContacts.cmp</b> has a init handler which is invoked when the component is loaded. This calls the findAllContacts method on the DummyController apex class using the functions defined in the <b>DummyContactsController.js</b> and <b>DummyContactsHelper.js</b>
 
 Read more about
-[Action States](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/controllers_server_actions_states.htm)
+[Action States](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/controllers_server_actions_states.htm){:target="_blank"}
 
 Read more about
 [Better Exception Handling](https://developer.salesforce.com/blogs/2017/09/error-handling-best-practices-lightning-apex.html)
