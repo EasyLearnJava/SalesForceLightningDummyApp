@@ -5,6 +5,7 @@
             var state = response.getState();
             if (state === "SUCCESS") {
                 console.log(response.getReturnValue());
+                component.set("v.contactsList", response.getReturnValue());
             } else if (state === "ERROR"){
                 var message = response.getError();
                 console.error("findAllContactsHelper : Error");
