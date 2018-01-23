@@ -1,3 +1,4 @@
 <aura:application extends="force:slds">
-	<c:DummyHeader />
+    <c:DummyHeader />
+    <c:DummyContacts />
 </aura:application>
