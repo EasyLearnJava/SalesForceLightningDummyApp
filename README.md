@@ -21,3 +21,9 @@ Read more about
 [Better Exception Handling](https://developer.salesforce.com/blogs/2017/09/error-handling-best-practices-lightning-apex.html)
 
 -----------------------------------------------------------------------------------------------------------------------------
+
+### 3-Display-Contacts-In-UI
+* <b>DummyContactsHelper.js</b> file on a successfull request to the apex findAllContacts will update an attribute called contactsList with the return value
+* <b>DummyContacts.cmp</b> uses the contactsList attribute populted in the above scenario, and iterates over the list and calls the <b>DummyContactDetails.cmp</b> component to display the contact details
+
+-----------------------------------------------------------------------------------------------------------------------------
