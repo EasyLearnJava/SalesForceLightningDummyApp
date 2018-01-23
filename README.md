@@ -13,6 +13,7 @@
 
 Read more about
 [Action States](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/controllers_server_actions_states.htm)[target=_blank]
+<a href="https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/controllers_server_actions_states.htm" target="_blank">Hello, world!</a>
 
 Read more about
 [Better Exception Handling](https://developer.salesforce.com/blogs/2017/09/error-handling-best-practices-lightning-apex.html)
