@@ -70,6 +70,8 @@ action.setStorable();
 Read more about
 [Storable Actions](https://developer.salesforce.com/blogs/developer-relations/2017/03/lightning-components-best-practices-caching-data-storable-actions.html)
 
+<b>NOTE :</b> Pagination works as expected(not completely), In the next module let us fix the pagination feature when the user searches for a contact using the search bar
+
 -----------------------------------------------------------------------------------------------------------------------------
 
 
