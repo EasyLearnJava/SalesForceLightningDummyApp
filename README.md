@@ -44,3 +44,10 @@ Read more about
 
 -----------------------------------------------------------------------------------------------------------------------------
 
+### 6-Create-Pagination-Components-And-Event
+* <b>DummyContactsPaginator.cmp</b> contains the buttons and information about the record count and page numbers
+* <b>DummyContactsPageChange.evt</b> is an event which is invoked when the user clicks on the buttons defined in <b>DummyContactsPaginator.cmp</b> component
+
+<b>NOTE :</b> The user cannot see the pagination feature on the App, since the component is not included yet. Lets do it in the next module
+
+-----------------------------------------------------------------------------------------------------------------------------
