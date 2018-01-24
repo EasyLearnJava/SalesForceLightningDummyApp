@@ -1,6 +1,7 @@
 <aura:component controller="DummyController">    
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />    
     <aura:attribute name="contactsList" type="Contact[]"/>
+    <aura:handler name="updateSearchKey" event="c:DummyContactsSearchEvent" action="{!c.searchNameKeyChange}"/>
     
     <lightning:layoutItem padding="around-small" size="4" flexibility="auto">
         <fieldset class="slds-box slds-theme--default slds-container--small" style="background-color:#1589ee;">       
@@ -14,5 +15,5 @@
                 <c:DummyContactDetails contact="{#contact}"/>
             </lightning:layoutItem>    
         </aura:iteration>
-    </lightning:layout>
+    </lightning:layout>     
 </aura:component>
