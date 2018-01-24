@@ -62,7 +62,7 @@ Read more about
 <aura:handler name="pagePrevious" event="c:DummyContactsPageChange" action="{!c.onPagePrevious}" />    
 <c:DummyContactsPaginator page="{!v.page}" pages="{!v.pages}" total="{!v.total}" pageNext="{!c.onPageNext}"/>
 ```
-- The above lines of code added in <b>DummyContacts.cmp</b> shows 2 different ways to write event handling code. The first line contains the aura:handler tag to handle event with the name <u>pagePrevious</u>. The Second line contains <u>pageNext="{!c.onPageNext}"</u> which also handles the event with the name <u>pageNext</u> (The second scenario works since the event is triggered in the immediate child component). 
+- The above lines of code added in <b>DummyContacts.cmp</b> shows 2 different ways to write event handling code. The first line contains the aura:handler tag to handle event with the name _pagePrevious_. The Second line contains _pageNext="{!c.onPageNext}"_ which also handles the event with the name _pageNext_ (The second scenario works since the event is triggered in the immediate child component). 
 
 ```
 action.setStorable();
