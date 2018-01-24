@@ -3,5 +3,11 @@ public with sharing class DummyController {
     @AuraEnabled
     public static List<Contact> findAllContacts() {
         return [SELECT id, name, phone FROM Contact LIMIT 50];
+    }
+    
+    @AuraEnabled
+    public static List<Contact> searchByName(String searchKey) {
+        String name = '%' + searchKey + '%';
+        return [SELECT id, name, phone FROM Contact WHERE name LIKE :name LIMIT 50];
     }    
 }
