@@ -3,6 +3,12 @@
     <aura:attribute name="contactsList" type="Contact[]"/>
     <aura:handler name="updateSearchKey" event="c:DummyContactsSearchEvent" action="{!c.searchNameKeyChange}"/>
     
+    <aura:attribute name="searchKey" type="String" default=""/>
+    <aura:attribute name="pageSize" type="integer" default="8"/>
+    <aura:attribute name="page" type="integer"/>
+    <aura:attribute name="pages" type="integer"/>
+    <aura:attribute name="total" type="integer"/>
+    
     <lightning:layoutItem padding="around-small" size="4" flexibility="auto">
         <fieldset class="slds-box slds-theme--default slds-container--small" style="background-color:#1589ee;">       
             <c:DummyContactsSearchBar />
@@ -15,5 +21,10 @@
                 <c:DummyContactDetails contact="{#contact}"/>
             </lightning:layoutItem>    
         </aura:iteration>
-    </lightning:layout>     
+    </lightning:layout>   
+    
+    <!-- pagePrevious event is handled using aura:handler tag and pageNext event is handled direclty inside the tag c:DummyContactsPaginator -->
+    <aura:handler name="pagePrevious" event="c:DummyContactsPageChange" action="{!c.onPagePrevious}" />    
+    <c:DummyContactsPaginator page="{!v.page}" pages="{!v.pages}" total="{!v.total}" pageNext="{!c.onPageNext}"/>
+    
 </aura:component>
