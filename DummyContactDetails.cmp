@@ -1,0 +1,10 @@
+<aura:component >
+    <aura:attribute name="contact" type="Contact" />
+    
+    <lightning:card title="{!v.contact.Name}" iconName="standard:scan_card"> 
+        <a href="{! '#contact/' + v.contact.Id }">
+            <p class="slds-text-heading--small slds-p-horizontal--small">{!v.contact.Name}</p>
+            <p class="slds-text-heading--small slds-p-horizontal--small">{!v.contact.Phone}</p>
+        </a>
+    </lightning:card>    
+</aura:component>
