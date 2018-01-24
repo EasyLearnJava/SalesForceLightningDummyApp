@@ -1,13 +1,25 @@
 public with sharing class DummyController {
     
     @AuraEnabled
-    public static List<Contact> findAllContacts() {
-        return [SELECT id, name, phone FROM Contact LIMIT 50];
-    }
+    public static DummyContactsPagedResult findAllContacts(String searchKey, Decimal pageSize, Decimal pageNumber) {
+        Integer pSize = (Integer)pageSize;
+        String key = '%' + searchKey + '%';
+        Integer offset = ((Integer)pageNumber - 1) * pSize;
+        system.debug('pSize : ' + pSize);
+        system.debug('key : ' + key);
+        system.debug('offset : ' + offset);
+        DummyContactsPagedResult result =  new DummyContactsPagedResult();
+        result.pageSize = pSize;
+        result.page = (Integer) pageNumber;
+        result.total = [SELECT count() FROM contact WHERE name LIKE :key];
+        result.contacts = [SELECT Id, name, phone FROM contact WHERE name LIKE :key LIMIT :pSize OFFSET :offset];
+        System.debug(result);
+        return result;
+    } 
     
     @AuraEnabled
     public static List<Contact> searchByName(String searchKey) {
         String name = '%' + searchKey + '%';
         return [SELECT id, name, phone FROM Contact WHERE name LIKE :name LIMIT 50];
-    }    
+    }   
 }
