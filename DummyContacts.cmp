@@ -2,7 +2,7 @@
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />    
     <aura:attribute name="contactsList" type="Contact[]"/>
     
-    <lightning:layout horizontalAlign="center" multipleRows="true">
+    <lightning:layout horizontalAlign="left" multipleRows="true">
         <aura:iteration items="{!v.contactsList}" var="contact">
             <lightning:layoutItem padding="around-small" size="12" smallDeviceSize="6" mediumDeviceSize="4" largeDeviceSize="3">
                 <c:DummyContactDetails contact="{#contact}"/>
