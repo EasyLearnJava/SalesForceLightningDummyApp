@@ -33,4 +33,6 @@ Read more about
 * <b>DummyContactsSearchEvent.evt</b> is a component event which is registered in <b>DummyContactsSearchBar.cmp</b> component and invoked when the user inputs value in the search bar
 * <b>DummyContactsSearchBarController.js</b> file has searchKeyChange function which fires the event
 
+<b>NOTE :</b> The search functionality will not work, We need to create a handler to handle the event to perform search
+
 -----------------------------------------------------------------------------------------------------------------------------
