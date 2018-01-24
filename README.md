@@ -36,3 +36,11 @@ Read more about
 <b>NOTE :</b> The search functionality will not work, We need to create a handler to handle the event to perform search
 
 -----------------------------------------------------------------------------------------------------------------------------
+
+### 5-Search-EventHandling-And-View-Search-Results
+* <b>DummyContacts.cmp</b> has a event handler, which handles the event with the name <b>updateSearchKey</b> triggered from <b>DummyContactsSearchBar.cmp</b> component
+* <b>DummyContactscontroller.js</b> invokes the helper method <b>SearchAllContactsByNameKeyHelper</b> which inturn calls the apex controllers <b>searchByName</b> method to find the contacts which match the search criteria 
+* <b>DummyController.apxc</b> has a method <b>searchByName</b> to return contacts which match the input parameter
+
+-----------------------------------------------------------------------------------------------------------------------------
+
