@@ -1,0 +1,5 @@
+<aura:component >    
+    <aura:registerEvent name="updateSearchKey" type="c:DummyContactsSearchEvent"/>
+    <lightning:input aura:id="id_inputSearch" type="text" label="" name="mySearchKey" 
+                     onchange="{!c.searchKeyChange}" placeholder="Search Contact by Name"/>
+</aura:component>

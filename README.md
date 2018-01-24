@@ -27,3 +27,10 @@ Read more about
 * <b>DummyContacts.cmp</b> uses the contactsList attribute populted in the above scenario, and iterates over the list and calls the <b>DummyContactDetails.cmp</b> component to display the contact details
 
 -----------------------------------------------------------------------------------------------------------------------------
+
+### 4-Search-By-Name-And-Register-Event
+* <b>DummyContactsSearchBar.cmp</b> file provides a feature to search the contacts by name
+* <b>DummyContactsSearchEvent.evt</b> is a component event which is registered in <b>DummyContactsSearchBar.cmp</b> component and invoked when the user inputs value in the search bar
+* <b>DummyContactsSearchBarController.js</b> file has searchKeyChange function which fires the event
+
+-----------------------------------------------------------------------------------------------------------------------------
