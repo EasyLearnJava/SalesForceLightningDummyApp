@@ -51,3 +51,27 @@ Read more about
 <b>NOTE :</b> The user cannot see the pagination feature on the App, since the component is not included yet. Lets do it in the next module
 
 -----------------------------------------------------------------------------------------------------------------------------
+
+### 7-Add-Pagination-Refactor-DummyContacts-doInit-Function
+* <b>DummyContactsPagedResult.apxc</b> contains all the required values returned to the UI componets for displaying available contacts and also for pagination
+* <b>DummyController.apxc</b> has a method findAllContacts which is refactored to return <b>DummyContactsPagedResult.apxc</b>
+* <b>DummyContactsHelper.js</b> has a method findAllContactsHelper which is refactored to support pagination
+* <b>DummyContacts.cmp</b> now contains the reference to the <b>DummyContactsPaginator.cmp</b> for pagination feature
+
+```
+<aura:handler name="pagePrevious" event="c:DummyContactsPageChange" action="{!c.onPagePrevious}" />    
+<c:DummyContactsPaginator page="{!v.page}" pages="{!v.pages}" total="{!v.total}" pageNext="{!c.onPageNext}"/>
+```
+- The above lines of code added in <b>DummyContacts.cmp</b> shows 2 different ways to write event handling code. The first line contains the aura:handler tag to handle event with the name _pagePrevious_. The Second line contains _pageNext="{!c.onPageNext}"_ which also handles the event with the name _pageNext_ (The second scenario works since the event is triggered in the immediate child component). 
+
+```
+action.setStorable();
+```
+Read more about
+[Storable Actions](https://developer.salesforce.com/blogs/developer-relations/2017/03/lightning-components-best-practices-caching-data-storable-actions.html)
+
+<b>NOTE :</b> Pagination works as expected(not completely), In the next module let us fix the pagination feature when the user searches for a contact using the search bar
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+
