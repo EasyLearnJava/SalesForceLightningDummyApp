@@ -4,7 +4,9 @@
     },
     
     searchNameKeyChange: function(component, event, helper) {
-        helper.SearchAllContactsByNameKeyHelper(component, event);
+        var searchKey = event.getParam("searchKey");
+        component.set("v.searchKey", searchKey);
+        helper.findAllContactsHelper(component);
     },
     
     onPagePrevious: function(component, event, helper) {
