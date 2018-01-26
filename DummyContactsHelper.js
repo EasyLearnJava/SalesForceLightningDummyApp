@@ -1,6 +1,5 @@
 ({
     findAllContactsHelper : function(component, page) {
-        alert('page : ' + page);
         var action = component.get("c.findAllContacts");
         action.setStorable();
         var pageSize = component.get("v.pageSize");
