@@ -74,4 +74,10 @@ Read more about
 
 -----------------------------------------------------------------------------------------------------------------------------
 
+### 8-Fix-Pagination-For-Search-And-Refactor-Code
+* <b>DummyContactscontroller.js</b> is refactored to call a single helper method <b>findAllContactsHelper</b>
+* <b>DummyController.apxc</b> is refactored and the method <b>findAllContacts</b> can retrieve records during App initial load, or during search or during pagination 
+
+-----------------------------------------------------------------------------------------------------------------------------
+
 
